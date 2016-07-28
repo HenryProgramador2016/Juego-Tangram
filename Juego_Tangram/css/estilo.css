@@ -1,0 +1,93 @@
+/**
+ * 
+ *
+ * @version                               2.2
+ *
+ * @author                 Henry Fernnado Evangelista Bonilla < sagitario_henry_1993@hotmail.com>
+
+*/
+*{
+	/*Reseteamo los estilos de todos los elementos en padding:0 y margin: 0
+	"*" --->seleccion a todos los elementos.
+	*/
+	padding: 0;
+	margin:0;
+	
+}
+/*
+El método skewY()  sesga un elemento a lo largo del eje Y por el ángulo dado.
+El  método rotate() es similara  a las agujas del reloj, hace girar un elemento o hacia la izquierda de acuerdo con un determinado grado.
+*/
+
+.wrapper{
+	width: 970px;
+	margin:0 auto;
+}
+.contenedor{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	
+	margin:30px auto;
+	border:2px solid #222;
+}
+
+.trianguloNaranja{
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	
+	border-right: 100px solid rgba(0,0,0,0);
+	border-left: 100px solid #FD9832;
+	border-top: 100px solid rgba(0,0,0,0);
+
+}
+
+.cuadradoAmarillo{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: #FDFE32;
+}
+.trianguloVerde{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-right: 100px solid #98CB00;
+	border-left: 100px solid rgba(0,0,0,0);
+	border-top: 100px solid rgba(0,0,0,0);
+}
+.trianguloAzul{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 100px solid rgba(0,0,0,0);
+	border-left: 100px solid rgba(0,0,0,0);
+	border-top: 100px solid #0392C2;
+}
+.paralelogramo {
+    width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	background: #FDCBFD;
+	transform: skewY(45deg);
+}
+.rombo {
+     width: 71px;
+    height: 71px;
+    position: relative;
+    top: 15px;
+    margin: 0 auto;
+    background: #FD0000;
+    transform: rotate(45deg);
+}
